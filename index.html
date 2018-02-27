@@ -1,0 +1,102 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/white.css">
+
+    <style>
+        ul.list-style-none {
+            list-style: none;
+        }
+
+        .reveal section .slide-photo {
+            position: absolute;
+            right: 2em;
+            top: 2em;
+        }
+
+            .reveal section .slide-photo img {
+                width: inherit;
+                max-width: 100%;
+                height: auto;
+                border: none;
+                box-shadow: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>MSP Czechia</h1>
+                <h4>2018</h4>
+            </section>
+            <section>
+                <h2>Country Lead - Martin Dybal</h2>
+                <ul>
+                    <li>MSP since 2013</li>
+                    <li>MSP Lead since 2015</li>
+                </ul>
+            </section>
+            <section>
+                <div class="slide-photo">
+                    <img src="Resources/wug-logo_200.png" width="200" />
+                </div>
+                <h2>WUG</h2>
+                <h3>Windows user group organized by MSP & MVP</h3>
+                <ul class="list-style-none">
+                    <li>
+                        2017 statistics
+                        <ul>
+                            <li>Conferences: 3</li>
+                            <li>Evening sessions: 57</li>
+                            <li>Cities: 6</li>
+                            <li>Visitors: 3972</li>
+                            <li><a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiMWIxZTllMWEtMTk5Mi00OGQ4LWIzYjUtNWViMTg4MWQ3NmZiIiwidCI6IjlkZTEwZWVjLWI0ZmQtNGY3OC04Y2ZkLWM4NTVkMWI4NGMyZSIsImMiOjh9">Full statistic</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <div class="slide-photo">
+                    <img src="Resources/ems-logo.png" />
+                </div>
+                <h2>ZÁCHRANKA</h2>
+                <h3> A Life-Saving Mobile App</h3>
+                <ul class="list-style-none">
+                    <li>
+                        2017 statistics
+                        <ul>
+                            <li>Users: 600 000</li>
+                            <li>More then  10 000 emergency calls in last year</li>
+                            <li><a target="_blank" href="http://www.zachrankaapp.cz/en/functions">Full statistic</a></li>
+                        </ul>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <script src="reveal/lib/js/head.min.js"></script>
+    <script src="reveal/js/reveal.js"></script>
+    <script src="reveal/plugin/markdown/marked.js"></script>
+    <script src="reveal/plugin/markdown/markdown.js"></script>
+    <script src="reveal/plugin/highlight/highlight.js"></script>
+    <script src="reveal/plugin/notes/notes.js"></script>
+    <script>
+        Reveal.initialize({
+            width: 1920,
+            height: 1080,
+            controls: true,
+            progress: true,
+            history: true,
+            loop: false,
+            //mouseWheel: true,
+            transition: Reveal.getQueryHash().transition || 'default',
+        });
+        Reveal.configure({
+            keyboard: {
+                37: 'prev', // go to the next slide when the ENTER key is pressed
+                39: 'next' // go to the next slide when the ENTER key is pressed
+            }
+        });
+    </script>
+</body>
+</html>
