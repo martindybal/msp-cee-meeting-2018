@@ -10,67 +10,259 @@
 
         .reveal section .slide-photo {
             position: absolute;
-            right: 2em;
-            top: 2em;
+            right: 0;
+            top: 0;
         }
 
-            .reveal section .slide-photo img {
-                width: inherit;
-                max-width: 100%;
-                height: auto;
-                border: none;
-                box-shadow: none;
+        .reveal section img {
+            width: inherit;
+            max-width: 100%;
+            height: auto;
+            border: none;
+            box-shadow: none;
+        }
+
+        .photo-list {
+            display: flex;
+            flex: 0 1 auto;
+            justify-content: space-around;
+        }
+
+        .photo-list__photo {
+        }
+
+        .slide--fullscreen {
+            height: 1080px !important;
+            width: 1920px !important;
+        }
+
+        .slide--list-photos {
+            display: grid !important;
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-areas: "photo-list-top" "title" "content" "photo-list-bottom";
+        }
+
+            .slide--list-photos .photo-list--top {
+                height: 300px;
+                grid-area: photo-list-top;
             }
+
+            .slide--list-photos .slide-title {
+                grid-area: title;
+            }
+
+            .slide--list-photos .slide-content {
+                grid-area: content;
+                justify-self: center;
+            }
+
+            .slide--list-photos .photo-list--bottom {
+                height: 480px;
+                grid-area: photo-list-bottom;
+            }
+
+        .slide-content p {
+            width: 35em;
+        }
+
+        .msp-czech h1,
+        .msp-czech h4 {
+            color: #FF8C00;
+        }
     </style>
 </head>
 <body>
     <div class="reveal">
         <div class="slides">
-            <section>
-                <h1>MSP Czechia</h1>
-                <h4>2018</h4>
-            </section>
-            <section>
-                <h2>Country Lead - Martin Dybal</h2>
-                <ul>
-                    <li>MSP since 2013</li>
-                    <li>MSP Lead since 2015</li>
-                </ul>
-            </section>
-            <section>
-                <div class="slide-photo">
-                    <img src="Resources/wug-logo_200.png" width="200" />
-                </div>
-                <h2>WUG</h2>
-                <h3>Windows user group organized by MSP & MVP</h3>
-                <ul class="list-style-none">
-                    <li>
-                        2017 statistics
+            <section id="msp-czech">
+                <section class="slide--fullscreen msp-czech" data-background-image="Resources/CZ_bg.jpg">
+                    <h1>MSP Czechia & Slovakia</h1>
+                    <h4>2018</h4>
+                </section>
+                <section class="slide--fullscreen slide--list-photos">
+                    <div class="photo-list photo-list--top">
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSP/MSP5_300.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSP/MSP2_300.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSP/MSP7_300.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSP/MSP8_300.jpg" />
+                        </div>
+                    </div>
+                    <h1 class="slide-title">MSP Czechia & Slovakia</h1>
+                    <div class="slide-content">
                         <ul>
-                            <li>Conferences: 3</li>
-                            <li>Evening sessions: 57</li>
-                            <li>Cities: 6</li>
-                            <li>Visitors: 3972</li>
-                            <li><a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiMWIxZTllMWEtMTk5Mi00OGQ4LWIzYjUtNWViMTg4MWQ3NmZiIiwidCI6IjlkZTEwZWVjLWI0ZmQtNGY3OC04Y2ZkLWM4NTVkMWI4NGMyZSIsImMiOjh9">Full statistic</a></li>
+                            <li>3 MSP Leads</li>
+                            <li>53 MSPs</li>
+                            <li>33 MVPs</li>
                         </ul>
-                    </li>
-                </ul>
+                        <br />
+                        Communicate via Facebook group and emails. <strong>Personal meetings are preferred</strong>.
+                    </div>
+                    <div class="photo-list photo-list--bottom">
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSP/MSP1_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSP/MSP6_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSP/MSP3_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSP/MSP4_480.jpg" />
+                        </div>
+                    </div>
+                </section>
             </section>
-            <section>
-                <div class="slide-photo">
-                    <img src="Resources/ems-logo.png" />
-                </div>
-                <h2>ZÁCHRANKA</h2>
-                <h3> A Life-Saving Mobile App</h3>
-                <ul class="list-style-none">
-                    <li>
-                        2017 statistics
-                        <ul>
-                            <li>Users: 600 000</li>
-                            <li>More then  10 000 emergency calls in last year</li>
-                            <li><a target="_blank" href="http://www.zachrankaapp.cz/en/functions">Full statistic</a></li>
+            <section id="msp-leads">
+                <section class="slide--fullscreen slide--list-photos">
+                    <div class="photo-list photo-list--top">
+                        <div class="photo-list__photo">
+                            <img src="Resources/MartinDybal/Lecturing_300.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MartinDybal/WUG_300.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MartinDybal/Diving3_300.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MartinDybal/MSP_300.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MartinDybal/Tatry_300.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MartinDybal/Diving2_300.jpg" />
+                        </div>
+                    </div>
+                    <h2 class="slide-title">Country Lead - Martin Dybal</h2>
+                    <div class="slide-content">
+                        <p>
+                            My name is Martin, I'm MSP since 2013 after two years in MSP program I became MSP Lead for Czechia and Slovakia. Last year I was awarded as MVP.
+                            I am passionate about Microsoft technology for long time. I love programing and diving almost same as my girlfriend.
+                        </p>
+                        <p>I'm sorry I can't be here, I wish you a nice stay in Prague</p>
+                    </div>
+                    <div class="photo-list photo-list--bottom">
+                        <div class="photo-list__photo">
+                            <img src="Resources/MartinDybal/traveling_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MartinDybal/speaking_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MartinDybal/Diving_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MartinDybal/folklor_480.jpg" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    Martin Bojnansky
+                </section>
+            </section>
+            <section id="msp-projects">
+                <section class="slide--fullscreen slide--list-photos">
+                    <div class="slide-photo">
+                        <img src="Resources/wug-logo_200.png" width="200" />
+                    </div>
+
+                    <div class="slide-title">
+                        <h2>WUG</h2>
+                        <h3>Windows user group organized by MSP & MVP</h3>
+                    </div>
+                    <div class="slide-content">
+                        <ul class="list-style-none">
+                            <li>
+                                2017 statistics
+                                <ul>
+                                    <li>Conferences: 3</li>
+                                    <li>Evening sessions: 57</li>
+                                    <li>Hours of content: 237</li>
+                                    <li>Cities: 6</li>
+                                    <li>Visitors: 3972</li>
+                                    <li>On-line video gallery with 440 lectures record</li>
+                                    <li><a target="_blank" href="https://app.powerbi.com/view?r=eyJrIjoiMWIxZTllMWEtMTk5Mi00OGQ4LWIzYjUtNWViMTg4MWQ3NmZiIiwidCI6IjlkZTEwZWVjLWI0ZmQtNGY3OC04Y2ZkLWM4NTVkMWI4NGMyZSIsImMiOjh9">Full statistic</a></li>
+                                </ul>
+                            </li>
                         </ul>
-                </ul>
+                    </div>
+                    <div class="photo-list photo-list--bottom">
+                        <div class="photo-list__photo">
+                            <img src="Resources/WUG/Jirka_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/WUG/Wud_Days2_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/WUG/Wud_Days_480.jpg" />
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="slide-photo">
+                        <img src="Resources/ems-logo.png" />
+                    </div>
+                    <div class="slide-title">
+                        <h2>ZÁCHRANKA - A Life-Saving Mobile App</h2>
+                    </div>
+                    <div class="slide-content">
+                        The official app of the Czech Emergency Medical Service has been developed by MSP
+                        <ul class="list-style-none">
+                            <li>
+                                2017 statistics
+                                <ul>
+                                    <li>Users: 600 000</li>
+                                    <li>More then  10 000 emergency calls</li>
+                                    <li><a target="_blank" href="http://www.zachrankaapp.cz/en/functions">more info</a></li>
+                                </ul>
+                        </ul>
+                    </div>
+                    <div class="photo-list photo-list--bottom">
+                        <img src="Resources/zachranka_800.jpg" />
+                    </div>
+                </section>
+                <section class="slide--fullscreen slide--list-photos">
+                    <div class="slide-photo">
+                        <img src="Resources/ms-fest-logo_200.png" width="200" />
+                    </div>
+
+                    <div class="slide-title">
+                        <h2>MS Fest</h2>
+                        <h3>Biggest technical conference about Microsoft technologies in Czech</h3>
+                    </div>
+                    <div class="slide-content">
+                        <ul>
+                            <li>Cities: 3</li>
+                            <li>Days: 2</li>
+                            <li>Tracks: 4</li>
+                            <li>Visitors: 300 - 800</li>
+                            <li>Years: 11</li>
+                        </ul>
+                    </div>
+                    <div class="photo-list photo-list--bottom">
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSFest/MSFest1_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSFest/MSFest2_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSFest/MSFest3_480.jpg" />
+                        </div>
+                        <div class="photo-list__photo">
+                            <img src="Resources/MSFest/MSFest4_480.jpg" />
+                        </div>
+                    </div>
+                </section>
             </section>
         </div>
     </div>
